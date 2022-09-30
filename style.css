@@ -159,9 +159,16 @@ main {
   max-width: max-content;
 }
 
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+
 h1 {
   margin-top: 6rem;
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: var(--color-black);
   font-weight: 700;
   display: flex;
@@ -171,7 +178,7 @@ h1 {
 h4 {
   color: var(--color-gray);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.4rem;
   display: flex;
   flex-direction: column;
@@ -205,7 +212,7 @@ h4 {
 }
 
 .hero-img {
-  width: 100%;
+  width: 85%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -314,10 +321,15 @@ h4 {
   .container {
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     max-width: 100%;
     text-align: center;
     padding: 0 1rem;
+  }
+
+  .hero-text-container {
+    align-items: center;
+    gap: 25px;
   }
 
   h1 {
