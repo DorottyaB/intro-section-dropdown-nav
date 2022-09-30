@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo"><img src="images/logo.svg" alt="Logo" /></div>
+        <div class="nav-menu">
+          <ul class="nav-menu-1">
+            <li class="nav-item">
+              <a class="nav-link" id="features"
+                >Features
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                    id="path-1"
+                  /></svg
+              ></a>
+              <ul class="dropdown-menu hidden" id="dropdown-1">
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link-1"
+                    ><img src="images/icon-todo.svg" alt="Icon 1" class="dropdown-icon" />Todo
+                    List</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link-1"
+                    ><img
+                      src="images/icon-calendar.svg"
+                      alt="Icon 2"
+                      class="dropdown-icon"
+                    />Calendar</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link-1"
+                    ><img
+                      src="images/icon-reminders.svg"
+                      alt="Icon 3"
+                      class="dropdown-icon"
+                    />Reminders</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link-1"
+                    ><img
+                      src="images/icon-planning.svg"
+                      alt="Icon 4"
+                      class="dropdown-icon"
+                    />Planning</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="company"
+                >Company
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                    id="path-2"
+                  /></svg
+              ></a>
+              <ul class="dropdown-menu hidden" id="dropdown-2">
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link-2">History</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link-2">Our Team</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-link-2">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+
+          <ul class="nav-menu-2">
+            <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link round">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="hamburger">
+          <!-- <img src="images/bars-solid.svg" alt="" /> -->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1><span>Make </span>remote work</h1>
+        <div>
+          <h4>
+            Get your team in sync, no matter your location.
+            <span>Streamline processes, create team rituals, and</span> watch productivity soar.
+          </h4>
+        </div>
+
+        <a href="#" class="btn-cta">Learn more</a>
+        <div class="clients">
+          <img src="images/client-databiz.svg" alt="Client logo 1" />
+          <img src="images/client-audiophile.svg" alt="Client logo 2" />
+          <img src="images/client-meet.svg" alt="Client logo 3" />
+          <img src="images/client-maker.svg" alt="Client logo 4" />
+        </div>
+      </div>
+
+      <picture class="hero-img-container">
+        <source
+          srcset="images/image-hero-desktop.png"
+          media="(min-width: 900px)"
+          class="hero-img"
+        />
+        <img src="images/image-hero-mobile.png" alt="" class="hero-img" />
+      </picture>
+      <!-- <img
+          srcset="images/image-hero-mobile.png 750w, images/image-hero-desktop.png 960w"
+          sizes="(max-width: 800px) 750px,
+   960px"
+          src="images/image-hero-desktop.png"
+          alt=""
+          class="hero-img"
+        /> -->
+    </main>
+  </body>
+</html>
